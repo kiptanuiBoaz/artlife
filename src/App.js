@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       {/* Sccrolll up button */}
-      <ScrollUp />
+      {/* <ScrollUp /> */}
 
       <Router>
         <Routes>

@@ -10,7 +10,7 @@ import ImageArt from "../../components/homeSection/ImageArt";
 import PublicAct from "../../components/perpectiveSection/PublicAct";
 import art from './assets/art.jpg'
 import Navbar from "../../components/navbar/Navbar";
-import Naifest from './assets/Naifest.jpg';
+import Naifest from './assets/naifest.jpg';
 import Naifestpdf from "./assets/naifest.pdf";
 import KeepitLIt from "./assets/keepitlit.jpg";
 import keepitlitpdf from "./assets/keepitlit.pdf";
@@ -21,17 +21,17 @@ import Welcome from "../../components/hero/Welcome";
 
 
 
- const pdfFiles = [
-  
- ];
+const pdfFiles = [
+
+];
 
 const Home = () => {
- 
-   const [selectedPDF, setSelectedPDF] = useState("");
 
-   const handleCardClick = (index) => {
-     setSelectedPDF(pdfFiles[index].path);
-   };
+  const [selectedPDF, setSelectedPDF] = useState("");
+
+  const handleCardClick = (index) => {
+    setSelectedPDF(pdfFiles[index].path);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -49,6 +49,7 @@ const Home = () => {
           <a
             href={Naifestpdf}
             target="_blank"
+            rel="noreferrer"
             class="h-auto max-w-sm bg-[#ffc000] rounded shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"
           >
             <img
@@ -61,6 +62,7 @@ const Home = () => {
           <a
             href={keepitlitpdf}
             target="_blank"
+            rel="noreferrer"
             class="h-auto max-w-sm border-2 border-red-500 rounded shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"
           >
             <img
@@ -73,6 +75,7 @@ const Home = () => {
           <a
             href={WestaLifepdf}
             target="_blank"
+            rel="noreferrer"
             class="h-auto max-w-sm  rounded shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"
           >
             <img
@@ -96,7 +99,7 @@ const Home = () => {
 
       <PerspectiveSection />
       <Quote />
-     
+
     </>
   );
 };

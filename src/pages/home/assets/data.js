@@ -1,4 +1,4 @@
-import naifest from './Naifest.jpg'
+import naifest from './naifest.jpg'
 const data = [
   {
     id: 1,
